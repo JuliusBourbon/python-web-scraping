@@ -32,6 +32,7 @@ while True:
         print(f'Failed to retrieve page {page_num}')
         break
     
+    # Tentukan block konten(table) dan row(tr)
     soup = BeautifulSoup(response.text, "html.parser")
     table = soup.find("table", class_="table")
     rows = table.find_all("tr", class_="team")
@@ -55,6 +56,7 @@ while True:
 
     page_num += 1
 
+# Tampilkan hasil Scraping
 # for item in result:
 #     print(f"Team Name: {item['team_name']} - Year: {item['year']} - Win Percentage: {item['win_percentage']}")
 
