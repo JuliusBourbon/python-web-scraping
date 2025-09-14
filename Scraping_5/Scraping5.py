@@ -39,3 +39,12 @@ for block in blocks:
 
 for item in result:
     print(f"Product Name: {item['product name']} - Product Price: {item['product price']}")
+
+# Export Csv
+with open("product.csv", "w", newline="", encoding="utf-8") as csvfile:
+    fieldnames = ["product name", "product price"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for item in result:
+        writer.writerow(item)
