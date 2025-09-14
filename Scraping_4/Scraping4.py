@@ -12,6 +12,7 @@ headers = {
 }
 response = requests.get('https://www.scrapethissite.com/pages/advanced/?gotcha=headers', headers=headers)
 
+# Pengecekan status halaman
 if response.status_code == 200:
     print('Request was Successful!')
 else:
