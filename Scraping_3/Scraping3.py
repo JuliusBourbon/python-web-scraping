@@ -26,6 +26,7 @@ print(items)
 #         "awards": awards
 #     })
 
+# Tampilkan hasil Scraping
 # for item in result:
 #     print(f'Title: {item['title']} - Year: {item['year']} - Awards: {item['awards']}')
 
