@@ -10,9 +10,10 @@ payload = {
     'password': 'password'
 }
 
-# Coba login dan lihat metode login pada Network->login->Headers(:method:)
+# Ganti metode get dengan menggunakan post
 response = requests.post('https://www.scrapingcourse.com/login', data=payload)
 
+# Pengecekan status halaman
 if response.status_code == 200:
     print('Request was Successful!')
 else:
