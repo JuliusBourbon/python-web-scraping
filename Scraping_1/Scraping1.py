@@ -1,3 +1,4 @@
+# Scraping website https://www.scrapethissite.com/pages/simple/
 # 3 Langkah utama
 # Ambil konten asli dari website, Analisa dan tentukan block yang sesuai dengan kebutuhan, Parsing Data dari block tersebut
 
@@ -31,6 +32,7 @@ for block in country_blocks:
 
     result.append({"name": country_name, "capital": capital_name, "population": population_name})
 
+# Tampilkan hasil Scraping
 # for item in result:
 #     print(f"Country: {item['name']} - Capital: {item['capital']} - Population: {item['population']}")
 
